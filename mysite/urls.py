@@ -20,5 +20,6 @@ from store import views as v
 
 urlpatterns = [
     path('', v.index),
+    path('base', v.base),
     path('admin/', admin.site.urls)
 ]
