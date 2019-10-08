@@ -1,19 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap");
+
 html {
-  scroll-behavior: smooth; }
-  html body {
+  scroll-behavior: smooth; 
+}
+
+body {
     font-family: 'Josefin Sans', sans-serif;
-    overflow-x: hidden; }
-    html body #navigation-bar {
+    overflow-x: hidden;
+}
+
+#navigation-bar {
       padding: 0 15px;
       transition: margin-left 0.7s;
       overflow: hidden;
-      width: 100%; }
-      html body #navigation-bar #nav-icon a {
+      width: 100%; 
+}
+
+#navigation-bar #nav-icon a {
         font-size: 30px;
         color: #fff;
-        position: fixed; }
-      html body #navigation-bar #menu {
+        position: fixed;
+        top: 5px;
+}
+
+#navigation-bar #menu {
         height: 100vh;
         width: 0px;
         position: fixed;
@@ -23,19 +33,66 @@ html {
         background-color: #fff;
         overflow-x: hidden;
         padding: 60px 0 0 0;
-        transition: 0.7s; }
-        html body #navigation-bar #menu .close {
+        transition: 0.7s;
+}
+
+#navigation-bar #menu .close {
           position: absolute;
           top: 8px;
           right: 22px;
           margin-left: 50px;
           font-size: 30;
-          color: #000; }
-        html body #navigation-bar #menu .row {
-          padding: 200px 0px; }
-          html body #navigation-bar #menu .row a {
+          color: #000;
+}
+
+#navigation-bar #menu .row {
+          padding: 200px 0px;
+}
+
+#navigation-bar #menu .row a {
             height: 74px;
             text-align: center;
             font-size: 45px;
             color: black;
-            text-transform: uppercase; }
+            text-transform: uppercase;
+ }
+ 
+#page-one-container {
+    background: url("../images/orange_sky.jpeg") no-repeat center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#page-two-container {
+    height: 100vh;
+}
+
+.template-card {
+    text-align: center;
+    border: solid 3px black;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 25px;
+}
+
+.template-card h1 {
+    font-size: 45px;
+}
+
+.template-card #template-description {
+    font-size: 11px;
+}
+
+.template-card img {
+    width: 100px;
+}
+
+.template-card #template-price {
+    margin-top: 40px;
+}
+
+#page-three-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #E57248;
+}
