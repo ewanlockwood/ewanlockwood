@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from store import views as v
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', v.index),
+    path('admin/', admin.site.urls)
 ]
