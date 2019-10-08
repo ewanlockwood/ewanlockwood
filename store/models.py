@@ -21,3 +21,13 @@ class User(models.Model):
     
     def __str__(self):
         return self.name
+        
+class Review(models.Model):
+    review_title = models.CharField('Review Title', max_length=30, default=None)
+    template = models.ForeignKey(Template, on_delete=models.CASCADE, default=None)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    score = models.FloatField('Score')
+    comment = models.CharField('Review Comment', max_length=300)
+    
+    def __str__(self):
+        return self.review_title
