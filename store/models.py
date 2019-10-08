@@ -15,3 +15,9 @@ class Template(models.Model):
         return self.title
 
         # then compute mean rating and return it
+        
+class User(models.Model):
+    name = models.CharField("User's Name", max_length=30)
+    
+    def __str__(self):
+        return self.name
