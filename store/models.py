@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class Template(models.Model):
     title = models.CharField('Template Title', max_length =30)
     description = models.TextField()
@@ -23,8 +22,8 @@ class User(models.Model):
         return self.name
         
 class Review(models.Model):
-    review_title = models.CharField('Review Title', max_length=30, default=None)
-    template = models.ForeignKey(Template, on_delete=models.CASCADE, default=None)
+    review_title = models.CharField('Review Title', max_length=30)
+    template = models.ForeignKey(Template, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     score = models.FloatField('Score')
     comment = models.CharField('Review Comment', max_length=300)
