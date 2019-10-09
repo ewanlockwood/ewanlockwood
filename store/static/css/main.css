@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap");
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
 
 html {
-  scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,57 +12,84 @@ body {
 }
 
 #navigation-bar {
-      padding: 0 15px;
-      transition: margin-left 0.7s;
-      overflow: hidden;
-      width: 100%; 
+    padding: 0 15px;
+    transition: margin-left 0.7s;
+    overflow: hidden;
+    width: 100%;
 }
 
 #navigation-bar #nav-icon a {
-        font-size: 30px;
-        color: #fff;
-        position: fixed;
-        top: 5px;
+    font-size: 30px;
+    color: #fff;
+    position: fixed;
+    top: 5px;
 }
 
 #navigation-bar #menu {
-        height: 100vh;
-        width: 0px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #fff;
-        overflow-x: hidden;
-        padding: 60px 0 0 0;
-        transition: 0.7s;
+    height: 100vh;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding: 60px 0 0 0;
+    transition: 0.7s;
 }
 
 #navigation-bar #menu .close {
-          position: absolute;
-          top: 8px;
-          right: 22px;
-          margin-left: 50px;
-          font-size: 30;
-          color: #000;
+    position: absolute;
+    top: 8px;
+    right: 22px;
+    margin-left: 50px;
+    font-size: 30;
+    color: #000;
 }
 
 #navigation-bar #menu .row {
-          padding: 200px 0px;
+    padding: 200px 0px;
 }
 
 #navigation-bar #menu .row a {
-            height: 74px;
-            text-align: center;
-            font-size: 45px;
-            color: black;
-            text-transform: uppercase;
- }
- 
+    height: 74px;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    text-transform: uppercase;
+}
+
 #page-one-container {
     background: url("../images/orange_sky.jpeg") no-repeat center;
     height: 100vh;
     width: 100vw;
+}
+
+#page-one-container #self-statement {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Josefin Sans', serif;
+    font-size: 35px;
+    width: 45vw;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 65px;
+}
+
+#page-one-container #self-statement p span {
+    font-family: 'Grenze', serif;
+    font-size: 40px;
+    padding: 2.5px 5px;
+    background-color: white;
+    color: black;
+}
+
+#page-one-container #self-statement #line {
+    background-color: white;
+    height: 5px;
+    width: 150px;
+    margin-bottom: 20px;
 }
 
 #page-two-container {
