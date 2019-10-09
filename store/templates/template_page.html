@@ -4,10 +4,14 @@
         {% for obj in object_list %}
         <div class="col-xs-12 col-lg-4">
             <div class="template-card">
-                <h1>{{ obj.title }}</h1>
-                <p id='template-description'> {{ obj.description }} </p>
                 <img src="{{obj.image_url}}"></img>
-                <p class='badge badge-success'id='template-price'> £{{ obj.price }} </p>
+                <div class="card-text">
+                    <h1>{{ obj.title }}</h1>
+                    <p id='template-description'> {{ obj.description }} </p>
+                    <p class='badge badge-success'id='template-price'> £{{ obj.price }} </p>
+                </div>
+                
+                
             </div>
         </div>
         {% endfor %}
