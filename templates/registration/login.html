@@ -1,8 +1,17 @@
-{% extends 'base.html' %} {% block content %}
-<h2>Login</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Login</button>
-</form>
+{% extends 'base.html' %} {% block login %}
+<!-- Login Row Start -->
+<div class="row login-row">
+  <div class="col-12">
+    {% if 'login' %}
+  <h2>Login</h2>
+  <form method="post">
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+  {% else %} {% endif %}
+  </div>
+</div>
+
+
+<!-- Login Row End -->
 {% endblock %}
