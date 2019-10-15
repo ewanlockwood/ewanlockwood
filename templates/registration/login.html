@@ -1,17 +1,33 @@
-{% extends 'base.html' %} {% block login %}
-<!-- Login Row Start -->
-<div class="row login-row">
-  <div class="col-12">
-    {% if 'login' %}
-  <h2>Login</h2>
-  <form method="post">
-    {% csrf_token %} {{ form.as_p }}
-    <button type="submit">Login</button>
-  </form>
-  {% else %} {% endif %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  {% load static %}
+  
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" type='text/css' />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Login Row Start -->
+  <div class="container-fluid" id='login-container'>
+    <div class="row" id='login-row'>
+      <div class="col-12">
+      {% if 'login' %}
+      <h2>Login Form </h2>
+      <form method="post">
+        {% csrf_token %} {{ form.as_p }}
+        <button type="submit" class='btn btn-success'>Login</button>
+      </form>
+      {% else %} {% endif %}
+    </div>
+    </div>
   </div>
-</div>
+  
 
-
-<!-- Login Row End -->
-{% endblock %}
+</body>
+</html>
