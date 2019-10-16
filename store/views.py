@@ -1,4 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.urls import reverse_lazy
+from django.views import generic
+
+from .forms import RegisterForm
 
 from .models import Template
 
@@ -17,3 +21,15 @@ def index(request):
     }
     
     return render(request, 'template_page.html', context)
+    
+def register(request):
+    if request.method == 'POST':
+        form = RegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+        
+        return redirect('/base')
+    else:
+        form = RegisterForm()
+    
+    return render(request, 'registration/registration.html', {'form': form})
