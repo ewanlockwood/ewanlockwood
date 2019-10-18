@@ -16,20 +16,22 @@ def index(request):
     """ Render index.html """
     
     queryset =  Template.objects.all()
-    context = { 'object_list' : queryset,
-                'title': 'List'
+    
+    context = {
+        'object_list' : queryset,
+        'title': 'List'
     }
+    
     
     return render(request, 'template_page.html', context)
     
 def register(request):
     if request.method == 'POST':
-        form = RegisterForm(request.POST)
+        form = RegisterForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-        
-        return redirect('/base')
+            return redirect('/base')
     else:
         form = RegisterForm()
     
-    return render(request, 'registration/registration.html', {'form': form})
+    return render(request, 'registration/registration.html', {'form': RegisterForm()})

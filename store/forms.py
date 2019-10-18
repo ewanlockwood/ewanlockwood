@@ -16,7 +16,8 @@ class RegisterForm(UserCreationForm):
         
     def __init__(self, *args, **kwargs):
         super(RegisterForm, self).__init__(*args, **kwargs)
-        self.helper = FormHelper()
         
+        self.helper = FormHelper()
         self.helper.add_input(Submit('submit', 'Register'))
+        self.helper.form_method = 'POST'
         

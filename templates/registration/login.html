@@ -18,14 +18,12 @@
   <div class="container-fluid" id='login-container'>
     <div class="row" id='login-row'>
       <div class="col-12">
-      {% if 'login' %}
       <h2>Login Form </h2>
       <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class='btn btn-success'>Login</button>
       </form>
-      {% else %} {% endif %}
     </div>
     </div>
   </div>
