@@ -22,7 +22,6 @@ def index(request):
         'title': 'List'
     }
     
-    
     return render(request, 'template_page.html', context)
     
 def register(request):

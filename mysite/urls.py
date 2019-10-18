@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from store import views as v
+from store import views as storev
+from cart import urls as urls_cart
 
 urlpatterns = [
-    path('', v.index),
-    path('base', v.base),
+    path('', storev.index),
+    path('base', storev.base),
+    path('register/', storev.register, name='register'),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('register/', v.register, name='register')
+    path('cart/', include(urls_cart)),
 ]
