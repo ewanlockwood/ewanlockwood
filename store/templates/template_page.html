@@ -10,7 +10,7 @@
                     <p id='template-description'> {{ obj.description }} </p>
                     <p class='badge badge-success'id='template-price'> £{{ obj.price }} </p>
                     
-                    <form method='POST' action='{% url "add_to_cart" template.id %}'>
+                    <form method='POST' action='{% url "add_to_cart" template_id=template.id %}'>
                         {% csrf_token %}
                         <input type="number" min='1' max='999' placeholder='Quantity'/>
                         <button class='btn btn-success' type='submit'> Add </button>

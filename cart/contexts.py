@@ -14,3 +14,5 @@ def cart_contents(request):
         cart_items.append({'id':id, 'quantity': quantity, 'template': template})
         
         return { 'cart_items': cart_items, 'total': total, 'template_count': template_count }
+    
+    return {}
