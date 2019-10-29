@@ -20,7 +20,7 @@ from store import views as storev
 from cart import urls as urls_cart
 
 urlpatterns = [
-    path('', storev.index),
+    path('', storev.index, name='index'),
     path('base', storev.base),
     path('register/', storev.register, name='register'),
     path('admin/', admin.site.urls),

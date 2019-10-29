@@ -14,6 +14,7 @@ def add_to_cart(request, id):
     cart[id] = cart.get(id, quantity)
 
     request.session['cart'] = cart
+    print(request.session)
     return redirect(reverse('index'))
 
     

@@ -1,16 +1,16 @@
 {% extends 'base.html' %} {% block content %}
 <div class='container-fluid' id="page-two-container">
     <div class="row">
-        {% for obj in object_list %}
+        {% for template in object_list %}
         <div class="template-card col-lg-4 col-xs-12">
             <div class="template-card">
-                <img src="{{obj.image_url}}"></img>
+                <img src="{{template.image_url}}"></img>
                 <div class="card-text">
-                    <h1>{{ obj.title }}</h1>
-                    <p id='template-description'> {{ obj.description }} </p>
-                    <p class='badge badge-success'id='template-price'> £{{ obj.price }} </p>
+                    <h1>{{ template.title }}</h1>
+                    <p id='template-description'> {{ template.description }} </p>
+                    <p class='badge badge-success'id='template-price'> £{{ template.price }} </p>
                     
-                <form method="post" action="{% url 'add_to_cart' template.title %}">
+                <form method="post" action="{% url 'add_to_cart' template.id %}">
                     {% csrf_token %}
                     <div class="input-group">
                         <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
