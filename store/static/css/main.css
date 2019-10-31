@@ -185,10 +185,38 @@ body {
     border: solid 2px #28a745;
     padding: 25px;
 }
-
 #register-container .row button  {
     border: none;
     padding: 10px 45px;
     border-radius: 0;
 }
 /* REGISTER END */
+
+/* CART.HTML START */
+
+.cart-container .template-item {
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    border: solid 1px black;
+    text-align: center;
+    height: 300px;
+}
+
+.cart-container .input-group {
+    font-size: 20px;
+    margin: 0px auto;
+    display: block;
+}
+
+.cart-container form .input-group input {
+    margin: 0px 10px;
+    width: 50px;
+    padding: 3px;
+}
+
+.cart-container button {
+    margin: 0px 30px;
+}
+
+/* CART.HTML END */
