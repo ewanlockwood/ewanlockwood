@@ -177,7 +177,9 @@ body {
 
 /* LOGIN END */
 
+
 /* REGISTER START */
+
 #register-container .row {
     width: 85vw;
     text-align: center;
@@ -190,33 +192,45 @@ body {
     padding: 10px 45px;
     border-radius: 0;
 }
+
 /* REGISTER END */
+
 
 /* CART.HTML START */
 
-.cart-container .template-item {
-    display: block;
-    margin: 10px;
-    padding: 5px;
-    border: solid 1px black;
-    text-align: center;
-    height: 300px;
+.cart-container {
+    margin: 10px 0 0 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
-
+.cart-container .row .card {
+    height: auto;
+    text-align: center;
+}
+.cart-container .row .card .card-text {
+    height: 50px;
+}
+.cart-container .row .card button {
+    border-radius: 0;
+}
 .cart-container .input-group {
-    font-size: 20px;
     margin: 0px auto;
     display: block;
 }
-
 .cart-container form .input-group input {
     margin: 0px 10px;
     width: 50px;
     padding: 3px;
+    text-align: center;
+    border: none;
 }
-
-.cart-container button {
-    margin: 0px 30px;
+.cart-container .purchase-row {
+    width: 300px;
+    margin: 30px auto;
+    display: block;
+    border: 1px solid rgba(0,0,0,.125);
+    text-align: center;
+    padding: 15px;
+    border-radius: 4px;
 }
 
 /* CART.HTML END */

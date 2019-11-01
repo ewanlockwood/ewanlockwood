@@ -1,35 +1,62 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
-<div class="cart-container container container-fluid">
-    <div class="row row-flex">
-        {% for item in cart_items %}
-        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-md-4 display panel panel-display">
-            <div class="template-item">
-                <div class="caption">
-                    <h3> {{item.template.title}}</h3>
-                    <div class="product-description">
-                        {{ item.template.description }}
-                    </div>
-                    <p> {{ item.template.price }} </p>
-                    <form action="{% url 'adjust_cart' item.template.id %}" method='post' class="form">
-                        {% csrf_token %}
-                        <div class="form-group">
-                            <label for="quantity" class='sr-only'> New Qty </label>
-                            <div class="input-group">
-                               x <input type="number" name="quantity" min='0' max='999' placeholder='{{ item.quantity }}'/>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    {% load static %} {% load crispy_forms_tags %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type='text/css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Your Cart</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="cart-container container container-fluid">
+        <div class="row row-flex">
+            {% for item in cart_items %}
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-md-4 display panel panel-display">
+                <div class="card">
+                    <img src="{{ item.template.image_url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.template.title }}</h5>
+                        <p class="card-text">{{ item.template.description }}</p>
+                        <p> {{ item.template.price }} </p>
+
+                        <form action="{% url 'adjust_cart' item.template.id %}" method='post' class="form">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="quantity" class='sr-only'> New Qty </label>
+                                <div class="input-group">
+                                    <span> Quantity </span>
+                                    <input type="number" name="quantity" min='0' max='999' placeholder='{{ item.quantity }}' />
+                                </div>
                             </div>
-                        </div>
-                        <button type='submit' class='btn btn-primary'> Adjust </button>
-                    </form>
+                            <button type='submit' class='btn btn-success'> Adjust </button>
+                        </form>
+                    </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
-    </div>
-    <div class="purchase-row row">
-        <p> Total </p>
-        <p> £ {{ total }} </p>
-    </div>
-    <a href='/' class='btn btn-success'> purchase </a>
-</div>
+        <div class="purchase-row row">
+            <h4> Total </h4>
+            <p> £ {{ total }} </p>
+            <a href='/' class='btn btn-success'> Purchase </a>
+        </div>
 
-{% endblock %}
+    </div>
+</body>
+
+</html>
