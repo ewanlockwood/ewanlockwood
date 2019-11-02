@@ -126,6 +126,7 @@ body {
 }
 .template-card img {
     height: 100%;
+    width: 100%;
 }
 .template-card .card-text {
     position: absolute;
@@ -134,6 +135,11 @@ body {
     height: 100%;
     width: 175px;
     padding: 5px;
+}
+.template-card .card-text form input,
+.template-card .card-text form button {
+    border: none;
+    border-radius: 0;
 }
 
 /* PAGE TWO END */
