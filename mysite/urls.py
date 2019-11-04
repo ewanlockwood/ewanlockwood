@@ -18,6 +18,7 @@ from django.urls import path, include
 
 from store import views as storev
 from cart import urls as urls_cart
+from checkout import urls as urls_check
 
 urlpatterns = [
     path('', storev.index, name='index'),
@@ -26,4 +27,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     path('cart/', include(urls_cart)),
+    path('checkout/', include(urls_check))
 ]
