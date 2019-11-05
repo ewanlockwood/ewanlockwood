@@ -3,6 +3,13 @@ from django.shortcuts import render, redirect, reverse
 # Create your views here.
 def view_cart(request):
     """ A view that renders the cart. """
+    
+    cart = request.session.get('cart', {})
+    
+    print(cart)
+    
+    
+    
     return render(request, 'cart.html')
     
 def add_to_cart(request, id):

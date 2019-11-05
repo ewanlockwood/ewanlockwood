@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="cart-jumbo jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Your Cart</h1>
+            <h1>Your Cart</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
@@ -53,10 +53,12 @@
         <div class="purchase-row row">
             <h4> Total </h4>
             <p> £ {{ total }} </p>
-            <a href='{% url "checkout" %}' class='btn btn-success'> Purchase </a>
+            <a href='{% url "checkout" %}' class='btn btn-success'> Checkout </a>
         </div>
 
     </div>
+    
+    {% block content %} {% endblock %}
 </body>
 
 </html>

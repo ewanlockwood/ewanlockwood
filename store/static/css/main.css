@@ -20,9 +20,10 @@ body {
 }
 #navigation-bar #nav-icon a {
     font-size: 30px;
-    color: #fff;
+    color: #484848;
     position: fixed;
     top: 5px;
+    left: 20px;
 }
 #navigation-bar #menu #auth-menu {
     height: 100px;
@@ -63,20 +64,38 @@ body {
 #navigation-bar #menu .row {
     padding: 200px 0px;
 }
-#navigation-bar #menu .row a, #navigation-bar #menu .row button {
+#navigation-bar #menu .row a,
+#navigation-bar #menu .row button {
     height: 74px;
     text-align: center;
     font-size: 45px;
     color: black;
     text-transform: uppercase;
 }
-#navigation-bar #menu .row span, #navigation-bar #menu .row span a {
+#navigation-bar #menu .row span,
+#navigation-bar #menu .row span a {
     font-size: 15px;
     text-align: center;
     text-transform: capitalize;
 }
 
 /* NAVIGATION BAR END */
+
+/* CART START */
+
+.cart-icon a {
+    position: fixed;
+    color: #484848;
+    font-size: 30px;
+    top: 48px;
+    left: 15px;
+}
+
+.cart-icon a:hover{
+    color: #484848;
+}
+
+/* CART END */
 
 /* PAGE ONE START */
 
@@ -112,7 +131,6 @@ body {
 
 /* PAGE ONE END */
 
-
 /* PAGE TWO START */
 
 #page-two-container {
@@ -123,7 +141,7 @@ body {
     display: block;
     margin: 10px auto;
     width: 350px;
-    
+
 }
 .template-card img {
     height: 100%;
@@ -147,7 +165,6 @@ body {
 
 /* PAGE TWO END */
 
-
 /* PAGE THREE START */
 
 #page-three-container {
@@ -158,11 +175,11 @@ body {
 
 /* PAGE THREE END */
 
-
 /* LOGIN START */
 
-#login-container, #register-container {
-    font-family: 'Josefin Sans', sans-serif; 
+#login-container,
+#register-container {
+    font-family: 'Josefin Sans', sans-serif;
 }
 #login-container .row {
     margin: 150px auto;
@@ -171,21 +188,20 @@ body {
     padding: 25px;
     text-align: center;
 }
-#login-container .row h2  {
+#login-container .row h2 {
     font-size: 21px;
 }
-#login-container .row p  {
+#login-container .row p {
     font-size: 12px;
 
 }
-#login-container .row button  {
+#login-container .row button {
     border: none;
     padding: 10px 45px;
     border-radius: 0;
 }
 
 /* LOGIN END */
-
 
 /* REGISTER START */
 
@@ -196,7 +212,7 @@ body {
     border: solid 2px #28a745;
     padding: 25px;
 }
-#register-container .row button  {
+#register-container .row button {
     border: none;
     padding: 10px 45px;
     border-radius: 0;
@@ -204,16 +220,36 @@ body {
 
 /* REGISTER END */
 
-
 /* CART.HTML START */
+
+.cart-jumbo {
+    font-family: 'Josefin sans', sans-serif;
+    color: white;
+    background: url("../images/orange_sky.jpeg") no-repeat center;
+}
+
+.cart-jumbo .breadcrumb {
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.cart-jumbo .breadcrumb li,
+.cart-jumbo .breadcrumb a{
+    color: white;
+}
 
 .cart-container {
     margin: 10px 0 0 0;
     font-family: 'Josefin Sans', sans-serif;
 }
 .cart-container .row .card {
-    height: auto;
+    height: 500px;
     text-align: center;
+    border-radius: 0;
+}
+
+.cart-container .row .card img {
+    height: 200px;
 }
 .cart-container .row .card .card-text {
     height: 50px;
@@ -236,10 +272,10 @@ body {
     width: 300px;
     margin: 30px auto;
     display: block;
-    border: 1px solid rgba(0,0,0,.125);
+    border: none;
     text-align: center;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 0px;
 }
 
 /* CART.HTML END */

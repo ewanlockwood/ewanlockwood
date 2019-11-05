@@ -22,7 +22,12 @@ def index(request):
         'title': 'List'
     }
     
-    return render(request, 'template_page.html', context)
+    cart = request.session.get('cart', {})
+    
+    for i in cart:
+        print(i)
+    
+    return render(request, 'template_page.html', context, cart)
     
 def register(request):
     if request.method == 'POST':
