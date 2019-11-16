@@ -10,16 +10,11 @@
     {% load static %}
 
     <link rel="stylesheet" href="{% static 'css/main.css' %}" type='text/css' />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    {% block head_js %}
-    {% endblock head_js %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> {% block head_js %} {% endblock head_js %}
 </head>
 
 <body>
-    <div class="cart-icon">
-        <a href='{% url "view_cart" %}'><i class="fas fa-shopping-cart"></i></a>
-    </div>
-
+    
     <!-- Navigation START -->
     <div id="navigation-bar">
         <div id="nav-icon">
@@ -40,6 +35,50 @@
         </div>
     </div>
     <!-- Navigation END -->
+
+    <!-- Cart START -->
+    <div id="cart-bar">
+        <div id="cart-icon">
+            <a onClick='openCartSlideMenu()'><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <div id='cart-menu' class='nav container-fluid'>
+            <a class='close' onClick='closeCartSlideMenu()'> <i class='fas fa-times'></i> </a>
+            <div class="row">
+                {% for item in cart_items %}
+                <div class="col-10 offset-1">
+                    <div class="card">
+                        <img src="{{ item.template.image_url }}" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">{{ item.template.title }}</h5>
+                            <p class="card-text">{{ item.template.description }}</p>
+                            <p id='price'> {{ item.template.price }} </p>
+
+                            <form action="{% url 'adjust_cart' item.template.id %}" method='post' class="form">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <label for="quantity" class='sr-only'> New Qty </label>
+                                    <div class="input-group">
+                                        <span> Quantity </span>
+                                        <input type="number" name="quantity" min='0' max='999' placeholder='{{ item.quantity }}' />
+                                    </div>
+                                </div>
+                                <button type='submit' class='btn btn-success'> Adjust </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <hr id='seperator'/>
+                
+                <div class="purchase-row row">
+                <h4> Total </h4>
+                <p> £ {{ total }} </p>
+                <a href='{% url "checkout" %}' class='btn btn-success'> Checkout </a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cart END -->
 
     <!-- Page one container START -->
     <div class='container-fluid' id="page-one-container">

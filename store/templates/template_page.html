@@ -8,21 +8,37 @@
                 <div class="card-text">
                     <h1>{{ template.title }}</h1>
                     <p id='template-description'> {{ template.description }} </p>
-                    <p class='badge badge-success'id='template-price'> £{{ template.price }} </p>
-                    
-                <form method="post" action="{% url 'add_to_cart' template.id %}">
-                    {% csrf_token %}
-                    <div class="input-group">
-                        <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
-                        <span class="input-group-btn">
+                    <p class='badge badge-success' id='template-price'> £{{ template.price }} </p>
+
+                    <form method="post" action="{% url 'add_to_cart' template.id %}">
+                        {% csrf_token %}
+                        <div class="input-group">
+                            <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+                            <span class="input-group-btn">
                             <button class="btn btn-success" type="submit">Add</button>
                         </span>
-                    </div>
-                </form>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
         {% endfor %}
+    </div>
+</div>
+
+<div class="container-fluid" id='page-three-container'>
+    <div id='page-three-overlay'>
+
+    </div>
+    <!--<div class="card">-->
+    <!--    <img class="card-img-top" src='../static/images/IMG_20191110_115448.jpg' alt="Card image cap">-->
+    <!--    <div class="card-body">-->
+    <!--        <p class="card-text">-->
+    <!--            Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <div id='page-three-overlay-bottom'>
+        <p> lol </p>
     </div>
 </div>
 {% endblock %}
