@@ -5,8 +5,8 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
-    font-family: 'Josefin Sans', sans-serif;
     overflow-x: hidden;
     cursor: url(http://cur.cursors-4u.net/special/spe-3/spe250.cur), auto !important;
 }
@@ -15,16 +15,16 @@ body::-webkit-scrollbar,
 div::-webkit-scrollbar {
     width: 4px;
 }
- 
+
 body::-webkit-scrollbar-track,
 div::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0);
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
 }
- 
+
 body::-webkit-scrollbar-thumb,
-div::-webkit-scrollbar-thumb{
-  background-color: #ff620d;
-  outline: 1px solid slategrey;
+div::-webkit-scrollbar-thumb {
+    background-color: #ff620d;
+    outline: 1px solid slategrey;
 }
 
 /* NAVIGATION BAR START */
@@ -35,6 +35,7 @@ div::-webkit-scrollbar-thumb{
     overflow: hidden;
     width: 100%;
 }
+
 #navigation-bar #nav-icon a {
     font-size: 30px;
     color: #484848;
@@ -42,10 +43,12 @@ div::-webkit-scrollbar-thumb{
     top: 5px;
     left: 20px;
 }
+
 #navigation-bar #menu #auth-menu {
     height: 100px;
     padding: 0 100px;
 }
+
 #navigation-bar #menu #auth-menu {
     font-size: 21px;
     position: absolute;
@@ -55,9 +58,11 @@ div::-webkit-scrollbar-thumb{
     padding: 0;
     left: 20px;
 }
+
 #navigation-bar #menu #auth-menu p a {
     font-size: 21px;
 }
+
 #navigation-bar #menu {
     height: 100vh;
     width: 0px;
@@ -69,7 +74,9 @@ div::-webkit-scrollbar-thumb{
     overflow-x: hidden;
     padding: 60px 0 0 0;
     transition: 0.7s;
+
 }
+
 #navigation-bar #menu .close {
     position: absolute;
     top: 8px;
@@ -78,17 +85,21 @@ div::-webkit-scrollbar-thumb{
     font-size: 30;
     color: #000;
 }
+
 #navigation-bar #menu .row {
     padding: 200px 0px;
 }
+
 #navigation-bar #menu .row a,
 #navigation-bar #menu .row button {
     height: 74px;
     text-align: center;
     font-size: 45px;
     color: black;
+    font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
 }
+
 #navigation-bar #menu .row span,
 #navigation-bar #menu .row span a {
     font-size: 15px;
@@ -106,6 +117,7 @@ div::-webkit-scrollbar-thumb{
     overflow: hidden;
     width: 100%;
 }
+
 #cart-bar #cart-icon a {
     font-size: 30px;
     color: #484848;
@@ -113,6 +125,7 @@ div::-webkit-scrollbar-thumb{
     top: 45px;
     left: 15px;
 }
+
 #cart-bar #cart-menu {
     height: 100vh;
     width: 0px;
@@ -125,6 +138,7 @@ div::-webkit-scrollbar-thumb{
     padding: 40px 0 0 0;
     transition: 0.7s;
 }
+
 #cart-bar #cart-menu .close {
     position: absolute;
     top: 8px;
@@ -145,6 +159,7 @@ div::-webkit-scrollbar-thumb{
     background-color: white;
     border: solid 2px #2ec75c;
 }
+
 #cart-bar #cart-menu .row span,
 #cart-bar #cart-menu .row span a {
     font-size: 15px;
@@ -161,6 +176,7 @@ div::-webkit-scrollbar-thumb{
     height: 100vh;
     width: 100vw;
 }
+
 #page-one-container #self-statement {
     color: white;
     position: absolute;
@@ -172,6 +188,7 @@ div::-webkit-scrollbar-thumb{
     text-transform: uppercase;
     line-height: 65px;
 }
+
 #page-one-container #self-statement p span {
     font-family: 'Grenze', serif;
     font-size: 40px;
@@ -179,6 +196,7 @@ div::-webkit-scrollbar-thumb{
     background-color: white;
     color: black;
 }
+
 #page-one-container #self-statement #line {
     background-color: white;
     height: 5px;
@@ -194,6 +212,7 @@ div::-webkit-scrollbar-thumb{
     height: 100vh;
     padding: 5vh 0;
 }
+
 .template-card {
     height: 250px;
     display: block;
@@ -201,10 +220,12 @@ div::-webkit-scrollbar-thumb{
     width: 350px;
 
 }
+
 .template-card img {
     height: 100%;
     width: 100%;
 }
+
 .template-card .card-text {
     position: absolute;
     top: 10px;
@@ -214,9 +235,9 @@ div::-webkit-scrollbar-thumb{
     padding: 5px;
     font-family: 'Josefin Sans', serif;
 }
+
 .template-card .card-text form input,
 .template-card .card-text form button {
-    border: none;
     border-radius: 0;
     font-family: 'Grenze', serif;
 }
@@ -229,22 +250,11 @@ div::-webkit-scrollbar-thumb{
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background: url("../images/woods.jpg") fixed;
+    background: url("../images/IMG_20191110_115448.jpg") fixed;
     background-size: cover;
     position: relative;
 }
-#page-three-container .card {
-    width: 50vw;
-    border: none;
-    border-radius: 0;
-    top: 25vh;
-    display: block;
-    margin: 0 auto;
-    z-index: 1;
-}
-#page-three-container .card .card-img-top{
-    border-radius: 0;
-}
+
 #page-three-overlay {
     width: 100vw;
     position: absolute;
@@ -254,11 +264,12 @@ div::-webkit-scrollbar-thumb{
     border-right: 50vw solid transparent;
     border-top: 25vh solid #fff;
 }
+
 #page-three-overlay-bottom {
     width: 100vw;
     position: absolute;
     z-index: 0;
-    bottom:0;
+    bottom: 0;
     left: 0;
     /*border-left: 50vw solid #fff;*/
     border-right: 100vw solid transparent;
@@ -273,6 +284,7 @@ div::-webkit-scrollbar-thumb{
 #register-container {
     font-family: 'Josefin Sans', sans-serif;
 }
+
 #login-container .row {
     margin: 150px auto;
     width: 300px;
@@ -280,13 +292,16 @@ div::-webkit-scrollbar-thumb{
     padding: 25px;
     text-align: center;
 }
+
 #login-container .row h2 {
     font-size: 21px;
 }
+
 #login-container .row p {
     font-size: 12px;
 
 }
+
 #login-container .row button {
     border: none;
     padding: 10px 45px;
@@ -304,6 +319,7 @@ div::-webkit-scrollbar-thumb{
     border: solid 2px #28a745;
     padding: 25px;
 }
+
 #register-container .row button {
     border: none;
     padding: 10px 45px;
@@ -325,25 +341,34 @@ div::-webkit-scrollbar-thumb{
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 #cart-menu .row .card {
     text-align: center;
     border-radius: 0;
     margin: 5px 0;
     border-radius: 0;
-    border: solid 2px rgba(150,150,150,0.6);
+    border-width: 3px;
+    border-style: solid;
+    border-image: gradient( to bottom,
+    red,
+    rgba(0, 0, 0, 0)) 2 100%;
 }
+
 #cart-menu .row .card img {
     height: 150px;
     border-radius: 0;
 }
+
 #cart-menu .row .card button {
     border-radius: 0;
     font-size: 11px;
 }
+
 #cart-menu .input-group {
     margin: 0px auto;
     display: block;
 }
+
 #cart-menu form .input-group input {
     margin: 0px 10px;
     width: 50px;
@@ -351,8 +376,9 @@ div::-webkit-scrollbar-thumb{
     text-align: center;
     border: none;
 }
+
 #cart-menu .purchase-row {
-    width: 100%;
+    width: 400px;
     margin: auto;
     display: block;
     border: none;
@@ -369,6 +395,7 @@ div::-webkit-scrollbar-thumb{
 #price {
     color: crimson;
 }
+
 #cart-menu p {
     margin: 0;
 }
@@ -376,7 +403,51 @@ div::-webkit-scrollbar-thumb{
 
 /* CART.HTML END */
 
-
 /* CHECKOUT.HTML START */
+
 /* CHECKOUT.HTML END */
 
+.aboutme-border {
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, #FF620D, #21D159);
+    padding: 3px;
+    position: absolute;
+    bottom: 80px;
+    left: 25px;
+    border-radius: 3px;
+}
+
+.aboutme {
+    width: 145px;
+    height: 215px;
+    background-color: #fff;
+}
+
+.aboutme p {
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ff620d;
+    font-size: 17px;
+    text-align: left;
+}
+
+/* FOOTER START */
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+}
+
+.footer a {
+    font-size: 45px;
+    padding: 0 5px;
+    color: #ff620d;
+}
+
+.footer a:hover {
+    color: #fa9761;
+}
+
+/* FOOTER END */
