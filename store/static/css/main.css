@@ -27,6 +27,11 @@ div::-webkit-scrollbar-thumb {
     outline: 1px solid slategrey;
 }
 
+
+
+
+
+
 /* NAVIGATION BAR START */
 
 #navigation-bar {
@@ -42,6 +47,7 @@ div::-webkit-scrollbar-thumb {
     position: fixed;
     top: 5px;
     left: 20px;
+    z-index: 10;
 }
 
 #navigation-bar #menu #auth-menu {
@@ -67,7 +73,7 @@ div::-webkit-scrollbar-thumb {
     height: 100vh;
     width: 0px;
     position: fixed;
-    z-index: 1;
+    z-index: 11;
     top: 0;
     left: 0;
     background-color: #fff;
@@ -124,19 +130,21 @@ div::-webkit-scrollbar-thumb {
     position: fixed;
     top: 45px;
     left: 15px;
+    z-index: 10;
 }
 
 #cart-bar #cart-menu {
     height: 100vh;
     width: 0px;
     position: fixed;
-    z-index: 1;
+    z-index: 12;
     top: 0;
     left: 0;
     background-color: #fff;
     overflow-x: hidden;
     padding: 40px 0 0 0;
     transition: 0.7s;
+    text-align: left;
 }
 
 #cart-bar #cart-menu .close {
@@ -154,7 +162,7 @@ div::-webkit-scrollbar-thumb {
     font-size: 15px;
     color: #2ec75c;
     border-radius: 0;
-    margin: 0 auto;
+    margin: 0 auto 5px;
     display: block;
     background-color: white;
     border: solid 2px #2ec75c;
@@ -175,6 +183,7 @@ div::-webkit-scrollbar-thumb {
     background: url("../images/orange_sky.jpeg") no-repeat center fixed;
     height: 100vh;
     width: 100vw;
+    z-index: 1;
 }
 
 #page-one-container #self-statement {
@@ -187,6 +196,7 @@ div::-webkit-scrollbar-thumb {
     letter-spacing: 2px;
     text-transform: uppercase;
     line-height: 65px;
+    z-index: 1;
 }
 
 #page-one-container #self-statement p span {
@@ -211,6 +221,7 @@ div::-webkit-scrollbar-thumb {
 #page-two-container {
     height: 100vh;
     padding: 5vh 0;
+    z-index: 10;
 }
 
 .template-card {
@@ -253,6 +264,7 @@ div::-webkit-scrollbar-thumb {
     background: url("../images/IMG_20191110_115448.jpg") fixed;
     background-size: cover;
     position: relative;
+    z-index: 0;
 }
 
 #page-three-overlay {
@@ -263,6 +275,7 @@ div::-webkit-scrollbar-thumb {
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
     border-top: 25vh solid #fff;
+    z-index: 10;
 }
 
 #page-three-overlay-bottom {
@@ -336,7 +349,6 @@ div::-webkit-scrollbar-thumb {
     background: url("../images/orange_sky.jpeg") no-repeat center;
 }
 
-
 #cart-menu {
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
@@ -377,7 +389,7 @@ div::-webkit-scrollbar-thumb {
     border: none;
 }
 
-#cart-menu .purchase-row {
+.purchase-row {
     width: 400px;
     margin: auto;
     display: block;
@@ -386,6 +398,12 @@ div::-webkit-scrollbar-thumb {
     padding: 15px;
     border-radius: 0px;
     bottom: 0;
+}
+
+.purchase-row p {
+    font-size: 21px;
+    margin: 0 10px;
+    color: red;
 }
 
 #cart-bar #cart-menu .row a {
@@ -451,3 +469,59 @@ div::-webkit-scrollbar-thumb {
 }
 
 /* FOOTER END */
+
+#payment-form {
+    margin: 25px auto 0;
+    padding: 0 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #fa9761;
+    color: white;
+    text-align: left;
+    width: 100%;
+}
+
+#payment-form legend {
+    text-align: center;
+    margin: 15px 0;
+}
+
+#payment-form label {
+    margin: 15px 10px;
+}
+
+#payment-form input {
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px white;
+    border-radius: 3px;
+    color: white;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+#payment-form input:focus {
+    outline: none;
+    background-color: white;
+    color: #fa9761;
+}
+
+#payment-form #submit_payment_btn {
+    background-color: #28a745;
+    border: none;
+    margin: 0 auto;
+    display: block;
+}
+
+@media only screen and (max-width: 727px) {
+    #page-one-container #self-statement {
+        font-size: 21px;
+        line-height: 28px;
+    }
+    
+    #page-two-container {
+        height: 1000px;
+    }
+    #navigation-bar #menu .row a {
+        font-size: 32px;
+    }
+
+}

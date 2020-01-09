@@ -42,7 +42,7 @@
             <a onClick='openCartSlideMenu()'><i class="fas fa-shopping-cart"></i></a>
         </div>
         <div id='cart-menu' class='nav container-fluid'>
-            <a class='close' onClick='closeCartSlideMenu()'> <i class='fas fa-times'></i> </a>
+            <a class='close' onClick='closeCartSlideMenu()' id='cart-icon'> <i class='fas fa-times'></i> </a>
             <div class="row">
                 {% for item in cart_items %}
                 <div class="col-10 offset-1">
@@ -63,14 +63,13 @@
                                     </div>
                                 </div>
                                 <button type='submit' class='btn btn-success'> Adjust </button>
+                                <a href='#'> Remove item </a>
                             </form>
                         </div>
                     </div>
                 </div>
                 {% endfor %}
-                <hr id='seperator'/>
-                
-                <div class="purchase-row row">
+                <div class="purchase-row">
                 <h4> Total </h4>
                 <p> £ {{ total }} </p>
                 <a href='{% url "checkout" %}' class='btn btn-success'> Checkout </a>
