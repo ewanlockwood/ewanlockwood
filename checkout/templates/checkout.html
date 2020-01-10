@@ -17,12 +17,12 @@
                 <div id="alert-message block-message error" id="stripe-error-message"></div>
             </div>
             <br>
-            <div class="form-group col-md-6">
-                {{ order_form }}
+            <div class="form-group col-sm-12 col-lg-6">
+                {{ order_form.as_p }}
             </div>
             <br>
             <div class="form-group col-md-6">
-                {{ payment_form }}
+                {{ payment_form.as_p }}
             </div>
 
             {% csrf_token %}
