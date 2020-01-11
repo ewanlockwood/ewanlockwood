@@ -94,6 +94,7 @@ div::-webkit-scrollbar-thumb {
 
 #navigation-bar #menu .row {
     padding: 200px 0px;
+    margin: auto;
 }
 
 #navigation-bar #menu .row a,
