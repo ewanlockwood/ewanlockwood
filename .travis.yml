@@ -1,6 +1,7 @@
 language: python
 python:
-- "3.4"
-install: "pip install -r requirements.txt"
+    - "3.4"
+install: 
+    - pip install -r requirements.txt
 script:
-- SECRET_KEY="^!0ua58^h4_%wc*#_4%h0#c836p4)cio2+*o_up*izew25ckea" ./manage.py test
+    - SECRET_KEY="^!0ua58^h4_%wc*#_4%h0#c836p4)cio2+*o_up*izew25ckea" ./manage.py test
