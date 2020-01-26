@@ -35,4 +35,13 @@ def adjust_cart(request, id):
         cart.pop(id)
         
     request.session['cart'] = cart
+    return redirect(reverse('index'))
+    
+
+def remove_item(request, id):
+    """Set the quantity of the specific template to 0."""
+    cart = request.session.get('cart', {})
+    
+    cart.pop(id)
+    
     return redirect(reverse('view_cart'))
