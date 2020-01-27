@@ -20,7 +20,6 @@ docker==4.0.2
 docutils==0.15.2
 Flask==1.0.4
 future==0.17.1
-futures==3.3.0
 ikpdb==1.2.3
 Inflector==2.0.12
 isort==4.3.21
