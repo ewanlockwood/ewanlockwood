@@ -464,48 +464,6 @@ div::-webkit-scrollbar-thumb {
     color: #fa9761;
 }
 
-/* FOOTER END */
-
-/*#payment-form {*/
-/*    margin: 25px auto 0;*/
-/*    padding: 0 25px;*/
-/*    font-family: 'Josefin Sans', sans-serif;*/
-/*    background-color: #fa9761;*/
-/*    color: white;*/
-/*    text-align: left;*/
-/*    width: 100%;*/
-/*}*/
-
-/*#payment-form legend {*/
-/*    text-align: center;*/
-/*    margin: 15px 0;*/
-/*}*/
-
-/*#payment-form label {*/
-/*    margin: 15px 10px;*/
-/*}*/
-
-/*#payment-form input {*/
-/*    background-color: rgba(0, 0, 0, 0);*/
-/*    border: solid 1px white;*/
-/*    border-radius: 3px;*/
-/*    color: white;*/
-/*    padding: 0 5px;*/
-/*    margin: 0 5px;*/
-/*}*/
-
-/*#payment-form input:focus {*/
-/*    outline: none;*/
-/*    background-color: white;*/
-/*    color: #fa9761;*/
-/*}*/
-
-/*#payment-form #submit_payment_btn {*/
-/*    background-color: #28a745;*/
-/*    border: none;*/
-/*    margin: 0 auto;*/
-/*    display: block;*/
-/*}*/
 
 @media only screen and (max-width: 727px) {
     #page-one-container #self-statement {
