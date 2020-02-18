@@ -46,10 +46,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-    'cart',
     'checkout',
+    'cart',
     'storages',
-    'bootstrap4'
 ]
 
 MIDDLEWARE = [
@@ -145,9 +144,9 @@ AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
-STATIC_URL = '/store/static/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "store/static"),
+    os.path.join(BASE_DIR, "static"),
 )
 
 
