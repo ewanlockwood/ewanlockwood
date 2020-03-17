@@ -9,7 +9,7 @@
 {% endblock %} {% block content %}
 
 <div class="container-fluid">
-    <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
+    <form class='row' role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
         <legend>Payment Details</legend>
 
         <div id="credit-card-errors" style="display: none;">
