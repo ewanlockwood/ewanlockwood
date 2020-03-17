@@ -41,11 +41,11 @@
     </div>
 
     <div class="form-group col-md-6">
-        {{ order_form | as_bootstrap }}
+        {{ order_form |crispy }}
     </div>
 
     <div class="form-group col-md-6">
-        {{ payment_form | as_bootstrap }}
+        {{ order_form |crispy }}
     </div>
 
     {% csrf_token %}
