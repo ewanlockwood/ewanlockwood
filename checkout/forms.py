@@ -6,15 +6,14 @@ from crispy_forms.layout import Submit
 
 class MakePaymentForm(forms.Form):
     
-    def __init__(self, *args, **kwargs):
-        self.helper = FormHelper()
-        self.helper.form_id = 'paymentForm'
-        self.helper.form_class = 'checkoutForms'
-        self.helper.form_method = 'post'
-        self.helper.form_action = 'checkout'
-
-        self.helper.add_input(Submit('submit', 'Submit'))
-        super(MakePaymentForm, self).__init__(*args, **kwargs)
+    # def __init__(self, *args, **kwargs):
+    #     self.helper = FormHelper()
+    #     self.helper.form_id = 'paymentForm'
+    #     self.helper.form_class = 'checkoutForms'
+    #     self.helper.form_method = 'post'
+    #     self.helper.form_action = 'checkout'
+        
+    #     super(MakePaymentForm, self).__init__(*args, **kwargs)
     
     MONTH_CHOICES = [(i, i) for i in range(1, 12)]
     YEAR_CHOICES = [(i, i) for i in range(2019, 2030)]
