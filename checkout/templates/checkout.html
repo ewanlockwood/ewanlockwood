@@ -2,6 +2,13 @@
 {% load crispy_forms_tags %}
 
 {% block head_js %}
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script type="text/javascript">
+    //<![CDATA[
+        Stripe.publishableKey = '{{ STRIPE_SECRET }}';
+    //]]>
+</script>
+<script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
 {% endblock %}
 {% block content %}
 <div class="row row-flex">
