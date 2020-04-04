@@ -14,7 +14,8 @@ import os
 
 from os import path
 
-import env
+if path.exists("env.py"):
+   import env
    
 import dj_database_url
 
