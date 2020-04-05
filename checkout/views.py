@@ -16,6 +16,8 @@ def checkout(request):
     if request.method=="POST":
         order_form = OrderForm(request.POST)
         payment_form = MakePaymentForm(request.POST)
+        print('order: ' + order_form)
+        print('payment: ' + payment_form)
         
         if order_form.is_valid() and payment_form.is_valid():
             order = order_form.save(commit=False)
@@ -23,6 +25,8 @@ def checkout(request):
             order.save()
             
             cart = request.session.get('cart', {})
+            print('cart: ' + cart)
+            
             total = 0
             for id, quantity in cart.items():
                 template = get_object_or_404(Template, pk=id)
