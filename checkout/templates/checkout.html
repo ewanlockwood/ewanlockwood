@@ -29,7 +29,7 @@
 <!--    <p>Total</p>-->
 <!--    <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>-->
 <!--</div>-->
-<div class="container-fluid">
+<div class="container-fluid checkout-forms-container">
     <div class="row">
         <form role="form" method="POST" id="payment-form" action="{% url 'checkout' %}">
             <legend>Payment Details</legend>
@@ -38,11 +38,11 @@
                 <div id="alert-message block-message error" id="stripe-error-message"></div>
             </div>
 
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-12">
                 {{ order_form |crispy }}
             </div>
 
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-12">
                 {{ payment_form |crispy }}
             </div>
 
