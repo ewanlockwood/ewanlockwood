@@ -28,7 +28,7 @@
 ## Overview
 
 This is a full-stack web application that uses a centrally-owned dataset where
-users can buy website templates from the site throught the Stripe payment api. It
+users can buy website templates from the site through the Stripe payment api. It
 has 3 themes to chose from: Ocean, Forest and Desert.
 
 -----
@@ -48,38 +48,10 @@ increase user experience.
 
 ## Structure Plane
 
-Before I started my project I created a mockup using Adobe XD (image below). I understood that this was the foundation of my
-site as other ideas would come to mind when progressing with the project.
-
-All Mockups:
-
-<img src="static/assets/adobe_ux/iPhone 6-7-8 – Book – 1.png" alt="color scheme"/>
-<img src="static/assets/adobe_ux/iPhone 6-7-8 – Book – 2.png" alt="color scheme"/>
-<img src="static/assets/adobe_ux/iPhone 6-7-8 – Book – 3.png" alt="color scheme"/>
-<img src="static/assets/adobe_ux/iPhone 6-7-8 Book.png" alt="color scheme"/>
-<img src="static/assets/adobe_ux/iPhone 6-7-8 – Library.png" alt="color scheme"/>
-<img src="static/assets/adobe_ux/iPhone 6-7-8 – Menu close.png" alt="color scheme"/>
-<img src="static/assets/adobe_ux/iPhone 6-7-8 – Menu open.png" alt="color scheme"/>
-<img src="static/assets/adobe_ux/iPhone 6-7-8 – search.png" alt="color scheme"/>
-<img src="static/assets/adobe_ux/iPhone 6-7-8 – Signup.png" alt="color scheme"/>
-
-
-This is the overall structure that I wanted as the color scheme is pleasing to the eye and its not overwhelmed with content
-
 ## Interaction Design
-
-The menu situated (top right on mobile) assists the user in navigating through the website.
+The menus top left create and easier way for the user to navigate through the site.
 
 ## Surface Plane
-
-The typogragphy was found on google fonts and I chose the font <a href="https://fonts.google.com/specimen/Raleway">Raleway</a> as it
-has nice soft-rounded edges and also has 18 different font variants.
-
-The color scheme I chose for this project is seen below:
-
- - #fff191 ( Main color of the website )
- - #8e9195 ( Footer color )
- - #60a6f0 ( Main Button Color )
 
 ### Development
 
@@ -134,21 +106,6 @@ A Python Framework to help with the development of the web application.
 ## Testing
 
 I tested this project manually.
-
-## Manual Testing
-
-1. All forms work as expected.
-
-2. Responsiveness works on all devices
-
-3. Both Drop Down Menu's successfully change all graphs accordingly.
-
-4. Each Chart Interacts with each other successfully.
-
-I also used Google Developer Tools to simulate a mobile to help me see the responsiveness.
-
-There are zero errors in the published console log.
-
 -----
 
 ## Deployment
@@ -172,7 +129,4 @@ I would now ```$git status``` to check if everything is finished and then look a
 
 ## Credits
 ### Content
-All Icons came from https://fontawesome.com/.
-The main font was found at https://fonts.google.com/specimen/Releway.
-The images I used were from Adobe Stock.
 ### Media
