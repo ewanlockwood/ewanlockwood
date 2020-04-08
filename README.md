@@ -70,10 +70,8 @@ Heroku was the PaaS that enabled me to build and run my application.
 
 ### Existing Features
 
- 1. Users can insert their own book into the library
- 2. The googlebooks api generates an image that correlates with the book title name.
- 2. Users can add / remove books to their collection
- 3. Users can review books
+ 1. Users can purchase any of the three themes
+ 2. Mobile Responsive
 
 -----
 
