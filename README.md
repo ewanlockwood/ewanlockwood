@@ -48,12 +48,23 @@ enhance user experience.
 
 ## Structure Plane
 
+I drafted a rough Idea of the layout of my site using Microsoft Paint to act as a foundation for my site.
+
 <img src="static/images/page-one.jpg" alt="page one mockups"/>
+<img src="static/images/page-two.jpg" alt="page two mockups"/>
+<img src="static/images/page-thee.jpg" alt="page three mockups"/>
 
 ## Interaction Design
 The menus at the top left of the screen create an easier way for the user to navigate through the site.
 
 ## Surface Plane
+
+The main font is Joesefin Sans.
+
+The color scheme I chose for this project is seen below:
+
+##ff620d ( Main color of the website )
+#21D159 ( Button Success )
 
 ### Development
 
