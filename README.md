@@ -29,7 +29,7 @@
 
 This is a full-stack web application that uses a centrally-owned dataset where
 users can buy website templates from the site through the Stripe payment api. It
-has 3 themes to chose from: Ocean, Forest and Desert.
+has 3 themes to choose from: Ocean, Forest and Desert.
 
 -----
 
@@ -38,18 +38,18 @@ has 3 themes to chose from: Ocean, Forest and Desert.
 
 ## Strategy Plane
 
-The purpose for this web application is to provide a site that offers services to
+The purpose of this web application is to provide a site that offers services to
 help myself sell website templates to clients.
 
 ## Scope Plane
 
-As the website on has one function, to show products, I chose to create one page to
-increase user experience.
+As the website only has a singular function, to show products, I chose to create one page to
+enhance user experience.
 
 ## Structure Plane
 
 ## Interaction Design
-The menus top left create and easier way for the user to navigate through the site.
+The menus at the top left of the screen create an easier way for the user to navigate through the site.
 
 ## Surface Plane
 
