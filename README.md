@@ -48,6 +48,8 @@ enhance user experience.
 
 ## Structure Plane
 
+<img src="static/images/page-one.jpg" alt="page one mockups"/>
+
 ## Interaction Design
 The menus at the top left of the screen create an easier way for the user to navigate through the site.
 
