@@ -52,7 +52,7 @@ I drafted a rough Idea of the layout of my site using Microsoft Paint to act as 
 
 <img src="static/images/page-one.jpg" alt="page one mockups"/>
 <img src="static/images/page-two.jpg" alt="page two mockups"/>
-<img src="static/images/page-thee.jpg" alt="page three mockups"/>
+<img src="static/images/page-three.jpg" alt="page three mockups"/>
 
 ## Interaction Design
 The menus at the top left of the screen create an easier way for the user to navigate through the site.
