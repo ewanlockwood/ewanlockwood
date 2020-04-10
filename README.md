@@ -112,6 +112,9 @@ To import require modules to connect to Mongo.db and also to create the app usin
 ### Django
 A Python Framework to help with the development of the web application.
 
+### Stripe
+A online software platform for e-commerce payments.
+
 -----
 
 ## Testing
