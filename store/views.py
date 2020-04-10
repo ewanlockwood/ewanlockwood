@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.urls import reverse_lazy
 from django.views import generic
 
@@ -34,7 +34,7 @@ def register(request):
         form = RegisterForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('index')
+            return redirect(reverse('index'))
     else:
         form = RegisterForm()
     
