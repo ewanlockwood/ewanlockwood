@@ -34,7 +34,7 @@ def register(request):
         form = RegisterForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('/index')
+            return redirect('index')
     else:
         form = RegisterForm()
     

@@ -120,6 +120,9 @@ A online software platform for e-commerce payments.
 ## Testing
 
 I tested this project manually.
+
+All buttons work on each menu.
+
 -----
 
 ## Deployment
