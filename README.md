@@ -122,6 +122,8 @@ A online software platform for e-commerce payments.
 I tested this project manually.
 
 All buttons work on each menu.
+All social links work.
+Stripe test credit cards was good.
 
 -----
 
